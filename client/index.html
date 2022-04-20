@@ -8,6 +8,9 @@
     <title>QMusic</title>
     <!-- <script src="./resources/bootstrap.bundle.min.js"></script> -->
     <script src="./resources/main.js"></script>
+    <script src="https://kit.fontawesome.com/3a445ceca3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./resources/styles.css">
+
 </head>
 
 <body>
@@ -15,69 +18,46 @@
     <header>
 
         <div class="top-bar">
-            <p class="sitename">Q Music</a>
-            <div class="login">
-                
-                <label for="uname"><b>Username</b></label>
-                <input type="text" id="uname" value="uname" name="uname" required>
+            <h1 class="sitename">Q Music</h1>
+            <div class="loginMain">
+                <div id="login">
+                    <label for="uname"><b>Username</b></label>
+                    <input type="text" id="uname" value="uname" name="uname" required>
 
-                <label for="psw"><b>Password</b></label>
-                <input type="password" id="pswd" value="pswd" name="psw" required>
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" id="pswd" value="pswd" name="psw" required>
 
-                <button type="submit" id="login-btn">Login</button>
-                
-                <button type="submit" id="logout-btn">Logout</button>
-                
-            </div>
-        </div>
-        <div id="playlists">
-            <div id="all-songs"></div>
-            <div id="user-playlist"></div>
-        </div>
-
-    </header>
-    <!-- 
-    <main>
-        
-        <br>
-        <div class="container marketing">
-            <div id="products" class="row">
-            </div>
-
-            <hr class="featurette-divider">
-
-            <div class="row featurette">
-                <div class="col-md-12">
-                    <h2 class="featurette-heading" id="product-heading">Add a new Book</h2>
-                    <p class="lead">
-                        <form id="product-form">
-                            <div class="mb-3">
-                                <label for="title" class="form-label">Title</label>
-                                <input type="text" class="form-control" id="title">
-
-                            </div>
-                            <div class="mb-3">
-                                <label for="isbn" class="form-label">ISBN</label>
-                                <input type="text" class="form-control" id="isbn">
-                            </div>
-                            <div class="mb-3">
-                                <label for="publishedDate" class="form-label">Published Date</label>
-                                <input type="text" class="form-control" id="publishedDate">
-                            </div>
-                            <div class="mb-3">
-                                <label for="author" class="form-label">Author</label>
-                                <input type="text" class="form-control" id="author">
-                            </div>
-
-                            <button type="submit" class="btn btn-primary" id="product-btn">Submit</button>
-                        </form>
-                    </p>
+                    <button type="submit" id="login-btn">Login</button>
+                </div>
+                <div id="logout">
+                    <button type="submit" id="logout-btn">Logout</button>
                 </div>
             </div>
         </div>
+        <div id="playlists">
 
-    </main>
--->
+            <hr class="seperator">
+            <div id="search-bar">
+                <label for="search"><b>Search</b></label>
+                <input type="text" id="search" value="devil">
+                <button type="submit" id="search-btn">Search</button>
+            </div>
+            <div id="all-songs"></div>
+            <div id="user-playlist"></div>
+
+        </div>
+        <div id="bottom-bar">
+            <div id="down-right">
+                <button class="btnC" id="repeat-all-btn">repeat All</button>
+                <button class="btnC" id="repeat-one-btn">repeat One</button>
+                <button class="btnC" id="shuffle-btn">Shuffle</button>
+            </div>
+            <div id="player-container"></div>
+
+
+        </div>
+
+    </header>
 </body>
 
 </html>

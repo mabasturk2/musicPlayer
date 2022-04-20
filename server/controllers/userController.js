@@ -2,7 +2,7 @@ const User = require('../models/users');
 
 exports.getPlayList = (req, res, next) => {
     const user = req.body;
-    res.status(200).json(User.fetchPlayList(user.uname));
+    res.status(200).json(User.fetchPlayList(req.params.uname));
 }
 
 exports.login = (req, res, next) => {
